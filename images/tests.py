@@ -5,7 +5,7 @@ import datetime as dt
 # Create your tests here.
 
 class LocationTestClass(TestCase):
-    # Set up method
+    # Set up metho
     def setUp(self):
         self.loc1= Location(name = 'Nairobi')
         
