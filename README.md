@@ -26,7 +26,7 @@ As a user I would like to:
 
 ## Behaviour Driven Development
 
-| Behavior      | Input description | Outpu description                            |
+| Behavior      | Input description | Output description                            |
 | ------------- | ----------------- | --------------------------------------------- |
 | View images  | None              | The image will be posted to the home page     |
 | Search images | None              | Results will be displayed on the results page |
