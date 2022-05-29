@@ -3,7 +3,7 @@ from django.http import HttpResponse
 import datetime as dt
 from .models import Image, Category, Location
 
-# views 
+
 def index(request):
 
     '''
