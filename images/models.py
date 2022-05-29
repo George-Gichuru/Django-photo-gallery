@@ -1,6 +1,6 @@
 from django.db import models
 
-# serach
+
 
 
 class Location(models.Model):
