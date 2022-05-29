@@ -69,8 +69,8 @@ def nature(request):
 
 
 def entertainment(request):
-    ente_category = Category.objects.get(pk=5)
-    entertainment = Image.objects.filter(category=ente_category)
+    enter_category = Category.objects.get(pk=5)
+    entertainment = Image.objects.filter(category=enter_category)
     return render(request,'category/entertainment/entertainment.html', {'entertainment':entertainment})
 
 def technology(request):
