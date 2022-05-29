@@ -15,6 +15,6 @@ urlpatterns = [
     path('category/nature/', views.nature, name = 'nature'),
     path('category/entertainment/', views.entertainment, name = 'entertainment'),
 ]
-# urls
+
 if settings.DEBUG:
     urlpatterns+= static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
