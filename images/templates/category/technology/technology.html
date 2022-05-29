@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<br>
+<br>
+
+
+<div class="album">
+    <div class="container">
+        <h2>Technology</h2>
+    <div class="row">
+        {% for image in tech %}
+        {% include 'category_detail.html' %}
+        {% include 'modal.html' %}
+        {% empty %}
+        <h3>There are currently no images under this category</h3>
+        {% endfor %}
+    </div>
+    </div>
+</div>
+
+
+{% endblock %}

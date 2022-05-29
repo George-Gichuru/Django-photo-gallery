@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+</head>
+<body>
+
+    <div id="colorlib-main">
+        <section class="ftco-section bg-light ftco-bread">
+            <div class="container">
+                <div class="row no-gutters slider-text align-items-center">
+                    <div class="col-md-9 ftco-animate">
+                        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Gallery</span></p>
+
+                        <br>
+                        <br>
+
+                        <h1>Gallery</h1>
+
+                        <p> The art of photography is interesting. Explore some of the work done here.
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% include 'gallery/show_album.html' %}
+
+    </div>
+    
+</body>
+</html>
+
+{% endblock %}

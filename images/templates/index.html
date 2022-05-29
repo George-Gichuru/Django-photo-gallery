@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main role="main">
+
+    <div>
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading" style="font-size:72px;"> Photo Gallery </h1>
+                <p class="lead text-muted"> This is a collection of some of the work we have done in the past. Please get in touch if there is a category you would like to have added and we will include n our next updates. </p>
+                <p>
+                    <a href="{% url 'nature'%}" class="btn btn-success my-2">Nature</a>
+                    <a href="{% url 'entertainment'%}" class="btn btn-warning my-2">Entertainment</a>
+                    <a href="{% url 'technology'%}" class="btn btn-secondary my-2">Technology</a>
+                    <a href="{% url 'sports'%}" class="btn btn-primary my-2">Sports</a>
+                    <a href="{% url 'gallery' %}" class="btn btn-info my-2">All Photos</a>
+
+                </p>
+            </div>
+        </section>
+    </div>
+
+    {% include 'gallery/show_album.html' %}
+
+
+</main>
+
+{% endblock %}
