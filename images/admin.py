@@ -1,7 +1,6 @@
 from django.contrib import admin
 from .models import Image, Location, Category
 
-# create admin page here
 
 class ImageAdmin(admin.ModelAdmin):
     list_display = ['name','category','location','pub_date']
