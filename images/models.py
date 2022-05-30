@@ -46,10 +46,10 @@ class Category(models.Model):
 class Image(models.Model):
     name = models.CharField(max_length =80)
     description = models.TextField()
-    location = models.ForeignKey(Location, related_name='location', on_delete=models.DO_NOTHING)
-    category = models.ForeignKey(Category, related_name='category', on_delete=models.DO_NOTHING)
+    location = models.ForeignKey(Location,  on_delete=models.DO_NOTHING)
+    category = models.ForeignKey(Category,  on_delete=models.DO_NOTHING)
     pub_date = models.DateTimeField(auto_now_add=True)
-    photo = models.ImageField(upload_to = 'photos/')
+    photo = models.ImageField()
     
     class Meta:
         ordering = ["pub_date"]
