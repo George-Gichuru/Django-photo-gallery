@@ -60,7 +60,7 @@ As a user I would like to:
 - Bootstrap
 - Javascript
 
-Live Link: > 
+Live Link: > https://djangophoto-gallery.herokuapp.com/
 
 ## Contact Information
 
