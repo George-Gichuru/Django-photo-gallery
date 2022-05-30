@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'gallery.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'gallery',
+        'NAME': 'gallery_2',
         'USER': 'postgres',
         'PASSWORD': 'gichuru',
     }
@@ -120,14 +120,19 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
-
 STATIC_URL = '/static/'
+MEDIA_URL = '/images/'
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
+]
+MEDIA_ROOT = BASE_DIR / 'static/images'
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
-MEDIA_URL = '/photos/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'photos')
+
 
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
