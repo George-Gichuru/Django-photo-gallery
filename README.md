@@ -6,7 +6,7 @@ This is a Gallery Web-App page which shows several pictures in collection with t
 
 Written by George Gichuru.
 
-## Installatio
+## Installation
 
 Clone the repository
 Create a virtual environment
