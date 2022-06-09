@@ -1,5 +1,5 @@
 from django.db import models
-
+from cloudinary.models import CloudinaryField
 
 
 
@@ -49,7 +49,7 @@ class Image(models.Model):
     location = models.ForeignKey(Location,  on_delete=models.DO_NOTHING)
     category = models.ForeignKey(Category,  on_delete=models.DO_NOTHING)
     pub_date = models.DateTimeField(auto_now_add=True)
-    photo = models.ImageField()
+    photo = CloudinaryField('photo')
     
     class Meta:
         ordering = ["pub_date"]
